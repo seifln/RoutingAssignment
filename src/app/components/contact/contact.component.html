@@ -1,0 +1,28 @@
+<section id="contact" class="p-3">
+    <h2 class="text-uppercase text-main text-center">contact section</h2>
+    <app-star [starColor]="'var(--main-color)'"></app-star>
+
+    <form class="mt-4 w-50 mx-auto">
+
+        <div class="name overflow-hidden">
+            <label for="userName" class="position-relative top-400" [class.top-0]="userName.length>0">UserName:</label>
+            <input placeholder="User Name" id="userName" type="text" name="name" class="form-control shadow-none border border-start-0 border-end-0 border-top-0" [(ngModel)]="userName">
+        </div>
+
+        <div class="age overflow-hidden">
+            <label for="userAge" class="position-relative top-400" [class.top-0]="userAge.length>0">UserAge:</label>
+            <input  placeholder="User Age" id="userAge" type="text" name="age" class="form-control shadow-none border border-start-0 border-end-0 border-top-0" [(ngModel)]="userAge">
+        </div>
+
+        <div class="email overflow-hidden">
+            <label for="userEmail" class="position-relative top-400" [class.top-0]="userEmail.length>0">UserEmail:</label>
+            <input  placeholder="Email" id="userEmail" type="text" name="email" class="form-control shadow-none border border-start-0 border-end-0 border-top-0" [(ngModel)]="userEmail">
+        </div>
+
+        <div class="password overflow-hidden">
+            <label for="userPassword" class="position-relative top-400" [class.top-0]="userPassword.length>0">UserPassword:</label>
+            <input  placeholder="Password" id="userPassword" type="text" name="password" class="form-control shadow-none border border-start-0 border-end-0 border-top-0" [(ngModel)]="userPassword">
+        </div>
+
+    </form>
+</section>

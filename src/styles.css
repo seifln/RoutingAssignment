@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --main-color:#2C3E50;
+    --second-color:#1ABC9C;
+}
+body{
+    padding-top: 86px;
+ 
+}
+.bg-main{
+    background-color: var(--main-color) !important;
+}
+.bg-second{
+    background-color: var(--second-color) !important;
+}
+
+.text-main{
+    color: var(--main-color);
+}
+
+.text-second{
+    color:var(--second-color);
+}
+
+body:has(nav.py-4){
+    padding-top: 118px;
+}

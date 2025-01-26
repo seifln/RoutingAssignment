@@ -1,0 +1,16 @@
+.layer{
+    inset: 0;
+    background-color: rgba(26, 188, 156, 0.6);
+    opacity: 0;
+    transition: all 0.3s;
+}
+.inner:hover .layer{
+    opacity: 1;
+
+}
+.myModal{
+    inset: 0;
+    z-index: 2000;
+    background-color: rgba(194, 219, 254, 0.6);
+   
+}

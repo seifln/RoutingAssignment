@@ -1,0 +1,21 @@
+<section id="portfolio" class="py-5 container">
+    <h2 class="text-uppercase text-center">portfolio component</h2>
+    <app-star [starColor]="'var(--main-color)'" ></app-star>
+
+    <div class="row g-3 mt-3 ">
+        @for (item of arrImgs; track $index) {
+            <div class="col-md-6 col-lg-4">
+                <div class="inner rounded-3 overflow-hidden position-relative"(click)="modalImg=item.img;modalView=false">
+                    <img [src]="item.img" alt="" class="w-100 ">
+                    <div class="layer position-absolute d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-plus text-white fa-5x"></i>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</section>
+
+<div class="myModal position-fixed top-0 start-0 end-0 bottom-0 d-flex justify-content-center align-items-center"[class.d-none]='modalView' (click)="showModal($event,img)">
+    <img #img [src]="modalImg" alt="" class="w-50">
+</div>
